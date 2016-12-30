@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F16A73E4-1F11-4005-BF52-15DA2815B8AF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InterfacesGraphiques</RootNamespace>
+    <AssemblyName>InterfacesGraphiques</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connexion.Designer.cs">
+      <DependentUpon>Connexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test1PerceptionEtMemoireAssociative.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test1PerceptionEtMemoireAssociative.Designer.cs">
+      <DependentUpon>Test1PerceptionEtMemoireAssociative.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test2AttentionEtConcentration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test2AttentionEtConcentration.Designer.cs">
+      <DependentUpon>Test2AttentionEtConcentration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test3CalculMental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test3CalculMental.Designer.cs">
+      <DependentUpon>Test3CalculMental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test4ProblemesMathematiques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test4ProblemesMathematiques.Designer.cs">
+      <DependentUpon>Test4ProblemesMathematiques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test5ProblemesPhysiques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test5ProblemesPhysiques.Designer.cs">
+      <DependentUpon>Test5ProblemesPhysiques.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Connexion.resx">
+      <DependentUpon>Connexion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Test1PerceptionEtMemoireAssociative.resx">
+      <DependentUpon>Test1PerceptionEtMemoireAssociative.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test2AttentionEtConcentration.resx">
+      <DependentUpon>Test2AttentionEtConcentration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test3CalculMental.resx">
+      <DependentUpon>Test3CalculMental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test4ProblemesMathematiques.resx">
+      <DependentUpon>Test4ProblemesMathematiques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test5ProblemesPhysiques.resx">
+      <DependentUpon>Test5ProblemesPhysiques.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoESA.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Classes\Classes.csproj">
+      <Project>{F03109FC-29B6-46AF-9C1C-CDB485EB2839}</Project>
+      <Name>Classes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perceptionGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attentionGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mathsGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\physiqueGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuGif.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
